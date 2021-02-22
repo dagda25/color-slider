@@ -1,0 +1,45 @@
+{
+  "name": "color-slider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server",
+    "test": "npm run eslint",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.7",
+    "@babel/preset-env": "7.8.7",
+    "@babel/preset-react": "7.8.3",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.3.0",
+    "eslint": "5.13.0",
+    "eslint-config-htmlacademy": "0.5.2",
+    "eslint-plugin-react": "7.21.2",
+    "file-loader": "^6.1.1",
+    "style-loader": "^2.0.0",
+    "webpack": "4.41.6",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "dependencies": {
+    "firebase-tools": "^9.2.2",
+    "history": "4.10.1",
+    "immutability-helper": "^3.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dagda25/color-slider.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dagda25/color-slider/issues"
+  },
+  "homepage": "https://github.com/dagda25/color-slider#readme"
+}

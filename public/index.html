@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Color slider"
+    />
+    <base href="/"></base>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( "input" ).checkboxradio();
+      } );
+    </script>
+    <title>Slider</title>
+  </head>
+  <body class="ui-widget-content">
+    <div id="root">
+      <fieldset>
+        <legend>Select: </legend>
+        <label for="color">color</label>
+        <input type="radio" name="radio-1" id="color" checked>
+        <label for="background-color">backgroundColor</label>
+        <input type="radio" name="radio-1" id="background-color">
+      </fieldset>
+       
+      <div id="red"></div>
+      <div id="green"></div>
+      <div id="blue"></div>
+       
+      <div id="swatch" class="ui-widget-content ui-corner-all">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+    </div>
+    <script src="bundle.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.2.9/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+  </body>
+</html>
